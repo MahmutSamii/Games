@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            background-color: red;
+            width: 100px;
+            height: 50px;
+            padding: 30px;
+        }
+        .container p{
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+ <div onmouseover="test(this)" onmouseout="ustuneGel(this)" class="container">
+    <p>Üstüne Gel</p>
+ </div>
+
+<script>
+    function test(obj){
+        obj.innerHTML="Teşşekürler Türkiye";
+    }
+    function ustuneGel(obj){
+        obj.innerHTML="Üstüne Gel";
+    }
+</script>
+</body>
+</html>

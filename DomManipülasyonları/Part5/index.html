@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="div1">
+    <p id="p1">Bu bir paragraftir.</p>
+    <p id="p2">Bu bir paragraftir.</p>
+</div>
+
+<script>
+
+    var parent  = document.createElement('p');
+    var node    = document.createTextNode('Bu yeni bir paragraftır.');
+    parent.appendChild(node);
+    var element = document.getElementById('div1');
+    element.appendChild(parent);
+
+</script>
+</body>
+</html>

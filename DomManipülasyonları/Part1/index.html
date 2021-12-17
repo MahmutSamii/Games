@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+  <h1>Merhaba</h1>
+  <h1>Dom Öğreniyoruz</h1>
+  <button>Test</button>
+  <button id="buton">Renk Değiştir</button>
+<ul>
+    <li id="benimID">Madde 1</li>
+    <li class="benimClass">madde 2</li>
+    <li class="benimClass">Madde 3</li>
+</ul>
+  <a href="https://www.youtube.com/" target="_blank">GO TO HELL</a>
+  <script>
+      var nesne = document.querySelectorAll('.benimClass');
+      nesne[0].style.color="red";
+      nesne[0].style.fontSize="20px";
+      nesne[1].textContent="Mahmut Sami";
+      var baslik = document.getElementsByTagName('h1');
+      baslik[0].style.marginLeft="50px"
+      baslik[0].style.color="blue"
+      baslik[0].style.fontStyle="italic"
+      baslik[1].style.marginLeft="100px"
+      baslik[1].style.color="pink"
+      baslik[1].style.fontStyle="oblique"
+
+      var link = document.querySelector('a');
+      link.setAttribute("href","https://www.google.com/")
+
+      var test = document.querySelector('button');
+
+      test.addEventListener('click',function (){
+          alert('TEST BUTONUNA TIKLANDI')
+      });
+
+      var baslik1 = document.querySelector('#benimID');
+
+      test.addEventListener('click',function (){
+          baslik1.style.color="AQUA";
+          baslik1.style.fontSize="larger";
+      })
+
+  </script>
+  <script src="dom.js"></script>
+</body>
+</html>

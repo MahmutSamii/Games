@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+javascript eğitim seti<br>
+Volkan Alakent<br>
+<button onclick="islem()">Çalıştır</button>
+
+<div id="sonucumuz"></div>
+
+<script>
+    // body : belge içerisindeki body etiketinin referansını elde etmek için kullanılır.
+
+    function islem (){
+        var sonuc = document.body.innerHTML;
+        document.getElementById('sonucumuz').innerHTML=sonuc;
+    }
+
+</script>
+</body>
+</html>

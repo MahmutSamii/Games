@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="https://www.google.com/search?q=javascript" id="bir" target="_blank">Javascript</a><br>
+<a href="https://www.google.com/search?q=html" id="iki" target="_blank">HTML</a><br>
+<a href="https://www.google.com/search?q=css" id="uc" target="_blank">CSS</a><br>
+<a href="https://www.google.com/search?q=php" id="dort" target="_blank">PHP</a><br>
+<a href="https://www.google.com/search?q=jquery" id="bes" target="_blank">JQuery</a><br>
+Çapa sayısı : <span id="capasayisialani">0</span>
+<script>
+  // anchors : belge içerisindeki çapa tagına(<a></a>) sahip tüm elemanların referansını elde etmek için kullanılır.
+  // elemanların referansları birden fazla ise her bir eleman döngü ile elde edilebilir.
+
+
+  var sonuc = document.anchors.length;
+  document.getElementById("capasayisialani").innerHTML=sonuc;
+
+
+</script>
+</body>
+</html>

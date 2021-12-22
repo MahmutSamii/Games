@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="https://www.google.com/search?q=javascript">Javascript</a><br>
+<a href="https://www.google.com/search?q=html">HTML</a><br>
+<a href="https://www.google.com/search?q=css">CSS</a><br>
+<a href="https://www.google.com/search?q=php">PHP</a><br>
+Link Sayısı : <span id="linksayisi"></span>
+<script>
+  // links : belge içerisindeki tüm linklerin referansını elde etmek için kullanılır.referanslar birden fazla ise her bir link referansı döngü ile
+  // elde edilebilir.
+
+
+  var islem = document.links.length;
+  document.getElementById('linksayisi').innerHTML=islem;
+
+</script>
+</body>
+</html>

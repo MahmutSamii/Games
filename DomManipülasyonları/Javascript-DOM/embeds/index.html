@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<embed id="birinci" src="https://www.hareketligifler.net/data/media/230/kus-hareketli-resim-0251.gif">
+<embed id="ikinci" src="https://www.hareketligifler.net/data/media/230/kus-hareketli-resim-0251.gif">
+<div id="sonucalani"></div>
+<script>
+    // embeds : belge içerisindeki embed veya object tagına ahip elemeanların referansını elde etmek için kullanılır.
+    // eleman referasnları birden fazla ise her bir eleman döngü ile elde edilebilir.
+
+    var sonuc = document.embeds.length;
+    document.getElementById("sonucalani").innerHTML=sonuc;
+</script>
+</body>
+</html>

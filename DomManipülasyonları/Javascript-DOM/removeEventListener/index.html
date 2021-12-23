@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    //removeEventListener() : belgeye addEventListener() metodu ile eklenmiş olan event (olay) işaretleyicisini silmek için kullanılır.
+
+    document.addEventListener('click',ornek)
+
+    function ornek (){
+        alert('tıklama oldu');
+        document.removeEventListener('click',ornek)
+    }
+</script>
 </body>
 </html>

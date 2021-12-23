@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="metinalani" dir="ltr">Ola senin dilin ne söylir lo nomıssız</div>
+<div id="sonucalani"></div>
+<script>
+  // dir : belge içerisindeki metinlerin yazılış yönü referansını elde etmek için kullanılır ayrıca belge içerisindeki metinlerin yazılış yönünün
+  // atamasını ayarlamak için kullanılır.
+  // ltr : left to right(soldan sağa)
+  // rtl : right to left(sağdan sola)
+
+  var islem = document.getElementById("metinalani").dir;
+  document.getElementById('sonucalani').innerHTML=islem;
+</script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" id="birinciform">
+   Adı Soyadı : <input type="text" id="birincimetinkutusu" name="metinkutusubir" value="Mahmut Sami">
+   Şehir : <input type="text" id="birincisehirkutusu" name="sehirkutusubir" value="İstanbul">
+    <button>Kaydet</button>
+</form><br><br><br>
+<form action="" id="ikinciform">
+    Web Sitesi : <input type="text" id="birinciwebsitesikutusu" name="websitesikutusubir" value="http://www.extraegitim.com">
+    E-mail : <input type="text" id="birinciemailkutusu" name="emailkutusubir" value="samimahmut34@gmail.com">
+    <button>Kaydet</button>
+</form><br><br><br>
+<div id="sonucalani"></div>
+<script>
+  // forms : belge içerisindeki form tagına sahip elemanların referansını elde etmek için kullanılır.eleman referansları birden
+  // fazla ise her bir eleman döngü ile elde edilebilir.
+
+  var sonuc = document.forms.length;
+  document.getElementById('sonucalani').innerHTML=sonuc;
+
+</script>
+</body>
+</html>

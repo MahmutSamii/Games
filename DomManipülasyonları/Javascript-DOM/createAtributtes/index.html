@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .demo {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<h1>Mahmut Sami</h1>
+<button onclick="ornek()">Uygula ulan trrek</button>
+<script>
+  // createAttribute () : belge içerisinde istenilen elemana yeni bir özellik nod'u oluşturur ve oluşturduğu nod'u bir
+  // nodObject olarak geriye döndürür.
+  // setAttributeNode   : createAttribute metodu ile oluşturulan özellik node'unu node object 'ine uygular.
+
+
+  function ornek(){
+      var deger     = document.getElementsByTagName('h1')[0];
+      var ozellik   = document.createAttribute('class');
+      ozellik.value = "demo";
+      deger.setAttributeNode(ozellik);
+  }
+
+</script>
+</body>
+</html>

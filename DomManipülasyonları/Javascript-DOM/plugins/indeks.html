@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // plugins : browserdaki tüm eklentilern referansını elde etmek için kullanılır.eklenti referansları birden fazla ise her bir
+    // eklenti döngü ile elde edilebilir.
+
+    var deger = navigator.plugins.length;
+
+    for (var i =0; i<deger;i++){
+        var sonuc = navigator.plugins[i].name;
+        document.write("Plugin ADI : " + sonuc + "<br>");
+    }
+
+
+
+
+</script>
+</body>
+</html>

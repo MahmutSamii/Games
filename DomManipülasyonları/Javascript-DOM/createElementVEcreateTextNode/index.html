@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // createElement()  : belge içerisine yeni bir html eleman node'u oluşturur ve oluşturduğu node'u bir node object olarak geriye döndürür.
+  // createTextNode() : createElement node'u ile oluşturulan html elemanına metin node'u oluşturur ve oluşturduğu node'u bir node object olarak geriye döndürür.
+  // appendChild ()   : bir node'u belirtilecek olan herhangi bir elemanın içerisine en sonda olmak üzere eklemek için kullanılır.
+
+  var sonuc = document.createElement('BUTTON');
+  var metin = document.createTextNode('Tıkla lan trrek');
+  sonuc.appendChild(metin);
+  document.body.appendChild(sonuc);
+</script>
+</body>
+</html>
